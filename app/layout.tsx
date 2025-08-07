@@ -1,20 +1,25 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
+/** @format */
 
-const inter = Inter({ subsets: ['latin'] });
+import "./globals.css";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'TechnoBeats - Best Techno Music Recommendations',
-  description: 'Discover the best techno music tracks, artists, and recommendations. Your ultimate destination for electronic dance music.',
-  keywords: 'techno music, electronic dance music, EDM, music recommendations, techno tracks',
-  authors: [{ name: 'TechnoBeats' }],
+  title: "TechnoBeats - Best Techno Music Recommendations",
+  description:
+    "Discover the best techno music tracks, artists, and recommendations. Your ultimate destination for electronic dance music.",
+  keywords:
+    "techno music, electronic dance music, EDM, music recommendations, techno tracks",
+  authors: [{ name: "TechnoBeats" }],
   openGraph: {
-    title: 'TechnoBeats - Best Techno Music Recommendations',
-    description: 'Discover the best techno music tracks, artists, and recommendations.',
-    type: 'website',
+    title: "TechnoBeats - Best Techno Music Recommendations",
+    description:
+      "Discover the best techno music tracks, artists, and recommendations.",
+    type: "website",
   },
 };
 
@@ -25,11 +30,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2113469480437461"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className={`${inter.className} bg-gray-900 text-white`}>
         <Navigation />
-        <main className="min-h-screen">
-          {children}
-        </main>
+        <main className="min-h-screen">{children}</main>
         <Footer />
       </body>
     </html>
