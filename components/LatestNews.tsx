@@ -1,34 +1,81 @@
-import { Calendar, ArrowRight, Music, Headphones, Radio } from 'lucide-react';
+/** @format */
+
+import { Calendar, ArrowRight, Music, Headphones, Radio } from "lucide-react";
 
 export default function LatestNews() {
   const news = [
     {
       id: 1,
       title: "Top 10 Techno Festivals to Watch in 2024",
-      excerpt: "From Berlin's underground scene to Detroit's iconic Movement Festival, discover the must-attend events.",
+      excerpt:
+        "From Berlin's underground scene to Detroit's iconic Movement Festival, discover the must-attend events that will define the techno landscape this year. Our comprehensive guide covers everything from ticket prices to lineup predictions.",
       date: "Dec 15, 2024",
       category: "Festivals",
       icon: Music,
-      readTime: "5 min read"
+      readTime: "12 min read",
+      content:
+        "The techno festival scene is evolving rapidly, with new events emerging alongside established institutions. This year promises to be particularly exciting with the return of several major festivals and the introduction of innovative new formats. From the industrial warehouses of Berlin to the open-air stages of Amsterdam, techno enthusiasts have more options than ever to experience their favorite music in incredible settings.",
     },
     {
       id: 2,
-      title: "The Rise of AI-Generated Techno Music",
-      excerpt: "Exploring how artificial intelligence is shaping the future of electronic music production.",
+      title: "The Rise of AI-Generated Techno Music: Revolution or Evolution?",
+      excerpt:
+        "Exploring how artificial intelligence is shaping the future of electronic music production, from composition algorithms to mastering tools that are changing how we create and consume techno.",
       date: "Dec 10, 2024",
       category: "Technology",
       icon: Headphones,
-      readTime: "8 min read"
+      readTime: "15 min read",
+      content:
+        "Artificial intelligence is transforming every aspect of music production, and techno is no exception. From AI-powered drum machines to intelligent mastering systems, the technology is enabling producers to create music in ways that were previously impossible. However, this raises important questions about creativity, authenticity, and the future role of human artists in electronic music.",
     },
     {
       id: 3,
-      title: "Underground Labels Making Waves",
-      excerpt: "Spotlight on independent record labels pushing the boundaries of modern techno.",
+      title: "Underground Labels Making Waves: The New Generation of Techno",
+      excerpt:
+        "Spotlight on independent record labels pushing the boundaries of modern techno, from experimental sound design to innovative distribution methods that are reshaping the industry.",
       date: "Dec 5, 2024",
       category: "Industry",
       icon: Radio,
-      readTime: "6 min read"
-    }
+      readTime: "10 min read",
+      content:
+        "While major labels continue to dominate the mainstream, a new generation of independent techno labels is emerging, bringing fresh perspectives and innovative approaches to electronic music. These labels are not just releasing music; they're building communities, fostering new talent, and pushing the boundaries of what techno can be.",
+    },
+    {
+      id: 4,
+      title: "The Evolution of Techno Sound Design: From Analog to Digital",
+      excerpt:
+        "A deep dive into how sound design techniques have evolved in techno music, from the early days of analog synthesis to modern digital workflows.",
+      date: "Dec 1, 2024",
+      category: "Production",
+      icon: Music,
+      readTime: "18 min read",
+      content:
+        "Techno's sonic palette has undergone a remarkable transformation over the past three decades. What began with simple drum machines and basic synthesizers has evolved into a sophisticated art form that combines analog warmth with digital precision. This evolution reflects not just technological advancement, but also changing artistic sensibilities and cultural influences.",
+    },
+    {
+      id: 5,
+      title: "Women in Techno: Breaking Barriers and Shaping the Future",
+      excerpt:
+        "Celebrating the contributions of female artists, producers, and industry professionals who are reshaping the techno landscape and inspiring the next generation.",
+      date: "Nov 28, 2024",
+      category: "Culture",
+      icon: Radio,
+      readTime: "14 min read",
+      content:
+        "The techno scene has historically been male-dominated, but women are increasingly making their mark as artists, producers, DJs, and industry leaders. From pioneering figures like Ellen Allien to rising stars like Amelie Lens, women are not just participating in techno culture—they're actively shaping its future and breaking down barriers for the next generation.",
+    },
+    {
+      id: 6,
+      title: "The Psychology of Techno: Why We're Drawn to the Beat",
+      excerpt:
+        "Exploring the scientific and psychological reasons behind techno's powerful appeal, from brain chemistry to cultural psychology.",
+      date: "Nov 25, 2024",
+      category: "Science",
+      icon: Headphones,
+      readTime: "16 min read",
+      content:
+        "Techno music has a unique ability to create powerful emotional and physical responses in listeners. This isn't just about personal taste—there's actual science behind why the repetitive beats, driving basslines, and hypnotic rhythms of techno can be so compelling. Understanding these psychological mechanisms helps explain techno's enduring appeal across cultures and generations.",
+    },
   ];
 
   return (
@@ -40,12 +87,13 @@ export default function LatestNews() {
             Latest News & Insights
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Stay updated with the latest trends, artist spotlights, and industry developments in the techno world
+            Stay updated with the latest trends, artist spotlights, and industry
+            developments in the techno world
           </p>
         </div>
 
         {/* News Grid */}
-        <div className="grid lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid lg:grid-cols-2 gap-8 mb-12">
           {news.map((article) => {
             const IconComponent = article.icon;
             return (
@@ -59,7 +107,9 @@ export default function LatestNews() {
                       <IconComponent className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <span className="text-cyan-400 text-sm font-medium">{article.category}</span>
+                      <span className="text-cyan-400 text-sm font-medium">
+                        {article.category}
+                      </span>
                       <div className="flex items-center text-gray-500 text-xs mt-1">
                         <Calendar className="w-3 h-3 mr-1" />
                         <span>{article.date}</span>
@@ -73,12 +123,16 @@ export default function LatestNews() {
                     {article.title}
                   </h3>
 
-                  <p className="text-gray-300 mb-6 leading-relaxed">
+                  <p className="text-gray-300 mb-4 leading-relaxed">
                     {article.excerpt}
                   </p>
 
+                  <p className="text-gray-400 text-sm mb-6 leading-relaxed">
+                    {article.content.substring(0, 200)}...
+                  </p>
+
                   <div className="flex items-center text-cyan-400 font-medium group-hover:text-cyan-300 transition-colors">
-                    <span className="mr-2">Read More</span>
+                    <span className="mr-2">Read Full Article</span>
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
@@ -93,8 +147,9 @@ export default function LatestNews() {
             Never Miss a Beat
           </h3>
           <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-            Subscribe to our newsletter and get the latest techno news, track recommendations, 
-            and exclusive content delivered straight to your inbox.
+            Subscribe to our newsletter and get the latest techno news, track
+            recommendations, and exclusive content delivered straight to your
+            inbox.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
             <input

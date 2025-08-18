@@ -36,29 +36,35 @@ export default function Navigation() {
               Home
             </Link>
             <Link
+              href="/artists"
+              className="text-gray-300 hover:text-emerald-400 transition-colors font-medium"
+            >
+              Artists
+            </Link>
+            <Link
+              href="/guides"
+              className="text-gray-300 hover:text-emerald-400 transition-colors font-medium"
+            >
+              Guides
+            </Link>
+            <Link
+              href="/festivals"
+              className="text-gray-300 hover:text-emerald-400 transition-colors font-medium"
+            >
+              Festivals
+            </Link>
+            <Link
+              href="/equipment"
+              className="text-gray-300 hover:text-emerald-400 transition-colors font-medium"
+            >
+              Equipment
+            </Link>
+            <Link
               href="/about"
               className="text-gray-300 hover:text-emerald-400 transition-colors font-medium"
             >
               About
             </Link>
-            <a
-              href="#featured"
-              className="text-gray-300 hover:text-emerald-400 transition-colors font-medium"
-            >
-              Music
-            </a>
-            <a
-              href="#categories"
-              className="text-gray-300 hover:text-emerald-400 transition-colors font-medium"
-            >
-              Categories
-            </a>
-            <a
-              href="#contact"
-              className="text-gray-300 hover:text-emerald-400 transition-colors font-medium"
-            >
-              Contact
-            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -88,33 +94,40 @@ export default function Navigation() {
                 Home
               </Link>
               <Link
+                href="/artists"
+                className="block px-3 py-2 text-gray-300 hover:text-emerald-400 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Artists
+              </Link>
+              <Link
+                href="/guides"
+                className="block px-3 py-2 text-gray-300 hover:text-emerald-400 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Guides
+              </Link>
+              <Link
+                href="/festivals"
+                className="block px-3 py-2 text-gray-300 hover:text-emerald-400 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Festivals
+              </Link>
+              <Link
+                href="/equipment"
+                className="block px-3 py-2 text-gray-300 hover:text-emerald-400 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Equipment
+              </Link>
+              <Link
                 href="/about"
                 className="block px-3 py-2 text-gray-300 hover:text-emerald-400 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 About
               </Link>
-              <a
-                href="#featured"
-                className="block px-3 py-2 text-gray-300 hover:text-emerald-400 transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Music
-              </a>
-              <a
-                href="#categories"
-                className="block px-3 py-2 text-gray-300 hover:text-emerald-400 transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Categories
-              </a>
-              <a
-                href="#contact"
-                className="block px-3 py-2 text-gray-300 hover:text-emerald-400 transition-colors"
-                onClick={() => setIsOpen(false)}
-              >
-                Contact
-              </a>
             </div>
           </div>
         )}
