@@ -176,7 +176,7 @@ export default function Festivals() {
             Techno Festivals
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Discover the world's most incredible techno festivals, from
+            Discover the world&apos;s most incredible techno festivals, from
             underground gatherings to massive international events
           </p>
         </div>
@@ -209,7 +209,7 @@ export default function Festivals() {
                   </div>
                 </div>
                 <p className="text-gray-300 mb-6 leading-relaxed">
-                  The world's largest techno festival returns to Amsterdam for
+                  The world&apos;s largest techno festival returns to Amsterdam for
                   another incredible weekend of electronic music. Featuring the
                   biggest names in techno across multiple stages with
                   state-of-the-art sound systems.
@@ -454,7 +454,7 @@ export default function Festivals() {
             </h3>
             <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
               Get exclusive access to festival tickets, travel packages, and
-              insider information about the world's best techno events.
+              insider information about the world&apos;s best techno events.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-8 py-3 rounded-full font-semibold transition-all transform hover:scale-105">

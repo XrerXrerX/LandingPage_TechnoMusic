@@ -93,7 +93,7 @@ export default function Artists() {
             Featured Artists
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Discover the world's most influential techno artists, from legendary
+            Discover the world&apos;s most influential techno artists, from legendary
             pioneers to rising stars shaping the future of electronic music
           </p>
         </div>

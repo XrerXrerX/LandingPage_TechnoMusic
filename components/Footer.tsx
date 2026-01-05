@@ -1,6 +1,7 @@
 /** @format */
 
 import Link from "next/link";
+import Image from "next/image";
 import {
   Music,
   Mail,
@@ -34,25 +35,37 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit our Facebook page"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-emerald-400 hover:bg-gray-700 transition-colors"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit our Twitter page"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-emerald-400 hover:bg-gray-700 transition-colors"
               >
                 <Twitter className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://instagram.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit our Instagram page"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-emerald-400 hover:bg-gray-700 transition-colors"
               >
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit our Youtube channel"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:text-emerald-400 hover:bg-gray-700 transition-colors"
               >
                 <Youtube className="w-5 h-5" />
@@ -90,18 +103,18 @@ export default function Footer() {
               >
                 Music Categories
               </a>
-              <a
-                href="#"
+              <Link
+                href="/privacy"
                 className="block text-gray-300 hover:text-emerald-400 transition-colors"
               >
                 Privacy Policy
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href="/terms"
                 className="block text-gray-300 hover:text-emerald-400 transition-colors"
               >
                 Terms of Service
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -136,9 +149,11 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-start items-center space-y-2 md:space-y-0 md:space-x-4">
             <span className="text-gray-400 text-sm">Powered by : </span>
             <div className="flex items-center space-x-2">
-              <img
+              <Image
                 src="/logo-ligal.png"
                 alt="PT. Lintas Inovasi Global"
+                width={32}
+                height={32}
                 className="h-8 w-auto"
               />
               <span className="text-gray-300 text-sm font-medium">
@@ -155,15 +170,15 @@ export default function Footer() {
               techno lovers worldwide.
             </p>
             <div className="flex items-center space-x-6 text-sm text-gray-400">
-              <a href="#" className="hover:text-emerald-400 transition-colors">
+              <Link href="/privacy" className="hover:text-emerald-400 transition-colors">
                 Privacy
-              </a>
-              <a href="#" className="hover:text-emerald-400 transition-colors">
+              </Link>
+              <Link href="/terms" className="hover:text-emerald-400 transition-colors">
                 Terms
-              </a>
-              <a href="#" className="hover:text-emerald-400 transition-colors">
+              </Link>
+              <Link href="/cookies" className="hover:text-emerald-400 transition-colors">
                 Cookies
-              </a>
+              </Link>
             </div>
           </div>
         </div>

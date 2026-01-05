@@ -4,6 +4,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, Music } from "lucide-react";
 
 export default function Navigation() {
@@ -16,10 +17,13 @@ export default function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
             <div className="bg-gradient-to-br from-emerald-500 to-cyan-500 p-1 rounded-lg group-hover:scale-110 transition-transform">
-              <img
+              <Image
                 src="/logo.png"
                 alt="ADS Techno Music"
-                className="w-12 h-12 text-white"
+                width={48}
+                height={48}
+                className="w-12 h-12"
+                priority
               />
             </div>
             <span className="text-xl font-bold bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">

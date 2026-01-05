@@ -108,7 +108,7 @@ export default function About() {
         <div className="bg-gradient-to-r from-gray-800/50 to-gray-700/50 backdrop-blur-sm rounded-2xl p-8 border border-gray-600 text-center">
           <h2 className="text-2xl font-bold text-emerald-400 mb-4">Get In Touch</h2>
           <p className="text-gray-300 mb-6">
-            Have a track recommendation or want to collaborate? We'd love to hear from you.
+            Have a track recommendation or want to collaborate? We&apos;d love to hear from you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a href="mailto:contact@technobeats.com" className="text-emerald-400 hover:text-emerald-300 transition-colors">

@@ -215,7 +215,7 @@ export default function Guides() {
               </div>
               <div className="bg-gray-800/50 rounded-xl p-6">
                 <h3 className="text-lg font-bold text-emerald-400 mb-4">
-                  What You'll Learn
+                  What You&apos;ll Learn
                 </h3>
                 <div className="space-y-2">
                   {guides[0].content.slice(0, 6).map((lesson, index) => (
